@@ -1,0 +1,539 @@
+/* Reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    scroll-behavior: smooth;
+}
+/* CSS define class */
+.text-white{
+    color: #fff !important;
+}
+.row{
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.row::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-full{
+    width: 100%;
+}
+.col-2{
+    width:50%;
+}
+.col-3{
+    width: 33.33%;
+}
+.mt-8{
+    margin-top:8px !important;
+}
+#main{
+    
+}
+/* CSS navigation */
+#header{
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+#nav{
+    display: inline-block;
+}
+#nav li{
+    display: inline-block;
+    position: relative;
+}
+#nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+}
+#nav > li:hover > a{
+    background-color: #fff;
+    color: #000;
+}
+#nav li a{
+    padding: 0 24px;
+    text-decoration: none;
+    line-height: 46px;
+    display: inline-block;
+}
+#header-phone #nav{
+    display: block;
+    background-color:#000;
+}
+#header-phone #nav li{
+    display: block;
+    position: relative;
+    width:100%;
+}
+#header-phone #nav li:nth-child(2){
+    width:fit-content;
+}
+#header-phone #nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+}
+#header-phone #nav > li:hover > a{
+    background-color: #fff;
+    color: #000;
+}
+#header-phone #nav li a{
+    padding: 0 24px;
+    text-decoration: none;
+    line-height: 46px;
+    display: block;
+    width:100%;
+}
+
+#nav .subnav{
+    position: absolute;
+    background-color:#fff;
+    box-shadow: 0 0 10px rgba(0,10,0,0.5);
+    display: none;
+    top: 100%;
+    left: 0;
+}
+#nav .subnav li{
+    width: 100%;
+}
+#nav li:hover .subnav{
+    display: block;
+} 
+#nav .subnav li a{
+    padding: 0 24px;
+    color:#000;
+    width: 100%;
+}
+#nav .subnav li a:hover{
+    color:#fff;
+    background-color:#000;
+}
+#nav-mobile{
+
+}
+
+/* CSS Search */
+#header .search-btn{
+    float: right;
+}
+#header .search-btn:hover{
+    background-color:rgb(168, 18, 18);
+    cursor: pointer;
+}
+#header .search-icon{
+    font-size: 24px;
+    color: #fff;
+    line-height: 46px;
+    padding: 0 21px;
+    font-weight: bold;
+}
+#header-phone .menu-btn{
+    float: right;
+    background-color:#000;
+    color: #fff;
+}
+#header-phone .menu-btn:hover{
+    background-color:#ccc;
+    cursor: pointer;
+}
+#header-phone .menu-icon{
+    font-size: 24px;
+    color: #fff;
+    line-height: 46px;
+    padding: 0 21px;
+    font-weight: bold;
+}
+#header-phone #nav li:nth-child(n+3){
+    display: none;
+}
+
+#band{
+    scroll-margin-block-start: 110px;
+}
+#contact{
+    scroll-margin-block-start: 110px;
+}
+/* CSS Slider */
+#slider{
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('../img/slider/banner.jpg') top center / cover no-repeat;
+    position: relative;
+    box-sizing: border-box;
+}
+#slider .text-content{
+    position: absolute;
+    bottom: 36px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+#slider .text-heading{
+    font-weight: normal;
+    font-size: 24px;
+}
+#slider .text-description{
+    padding-top: 16px;
+    font-weight: bold;
+    font-size: 15px;
+}
+/* CSS Content */
+
+#content .content-section{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:64px;
+    margin-bottom:64px;
+    text-align: center;
+}
+#content .section-heading{
+    font-size:30px;
+    font-weight:lighter;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+#content .section-quote{
+    font-size: 15px;
+    margin: 15px 0;
+    font-style: italic;
+    opacity: 0.6;
+}
+#content .description{
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+#content .members{
+    padding-top:32px;
+    padding-bottom: 32px;
+    display:inline-flex;
+}
+#content .tag{
+    width: 33.33%;
+}
+#content .tag img{
+    margin-top: 15px;
+    width: 60%;
+    border-radius: 5px;
+}
+#content .name{
+    font-size:15px;
+}
+
+/* CSS tour-section */
+.tour-section{
+    background-color:#000;
+    padding-top:32px;
+    padding-bottom:32px;
+}
+.infors-list{
+    background-color:#fff;
+}
+.infors-list li{
+    padding:8px 16px;
+    list-style-type: none;
+    text-align: left;
+    border-bottom: solid 1px #ddd;
+    color:#757575;
+}
+.sold-out{
+    background-color:#f44336;
+    color:#fff;
+    padding: 0 8px;
+    font-size: 15px;
+    margin-left: 15px;
+}
+.sold-in{
+    background-color: #000;
+    color:#fff;
+    width:24px;
+    height: 24px;
+    display: inline-block;
+    float: right;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    padding: 0 8px;
+    margin-right: 16px;
+    margin-top: -2px;
+}
+
+/* CSS tickets-section */
+.tickets-list{
+    display: inline-flex;
+    padding: 32px 0;
+    background-color:#000;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.ticket-content{
+    padding-left: 12px;
+}
+.ticket-infor{
+    margin: 0px 10px;
+    display: block;
+    width: 33.33%;
+    background-color: #fff;
+    text-align: left;
+}
+.ticket-infor img{
+    width: 100%;
+    vertical-align: middle;
+}
+.ticket-infor img:hover{
+    opacity:0.6;
+}
+.ticket-infor h3{
+    font-size: 15px;
+    margin: 12px 0px;
+}
+.time-ticket{
+    font-size: 15px;
+    margin: 12px 0px;
+    opacity: 0.6;
+}
+.description-ticket{
+    font-size: 15px;
+    margin: 12px 0px;
+}
+.btn-ticket{
+    font-size: 15px;
+    padding: 8px 16px;
+    margin: 0 0 16px;
+    color:#fff;
+    background-color:#000;
+    border: none;
+    text-align:center;
+    overflow: hidden;
+    cursor: pointer;
+}
+.btn-ticket:hover{
+    background-color: rgb(167, 155, 155);
+    color:#000;
+}
+/* CSS Contact */
+.contact-content{
+    padding: 32px 0;
+}
+.contact-infors{
+    text-align: left;
+    font-size: 18px;
+    color: #000;
+}
+.contact-infors i{
+    padding-right: 6px;
+}
+.contact-content .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.btn-submit{
+    float:right;
+    margin-top: 16px;
+    border:none;
+    background-color:#000;
+    color: #fff;
+    padding: 8px 16px;
+}
+.btn-submit:hover{
+    background-color: rgb(102, 95, 95);
+    color:#000;
+    cursor: pointer;
+}
+#footer{
+    text-align: center;
+    padding: 64px 0;
+}
+.social-list{
+    margin-bottom: 16px;
+}
+.social-list a{
+    text-decoration: none;
+    color:rgb(102, 95, 95);
+    font-size: 24px;
+}
+.social-list a:hover{
+    opacity: 0.7;
+}
+.copyright{
+    color:#757575;
+    opacity: 0.7;
+}
+/* CSS map */
+.map-section img{
+    width: 100%;
+}
+/* CSS Modal */
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.4);
+    align-items: center;
+    justify-content: center;
+    display:none;
+}
+.modal-container{
+    background-color:#fff;
+    width: 900px;
+    max-width:calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn 0.4s linear;
+}
+.modal-show{
+    display: flex !important;
+}
+.modal-close{
+    position: absolute;
+    right:0;
+    top:0;
+    padding: 12px 12px;
+    color: #fff;
+}
+.modal-close:hover{
+    background-color:#d4cdcd;   
+    color:#000;
+}
+header.modal-header{
+    background-color:#009688;
+    height:130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:30px;
+    color:#fff;
+}
+.header-name {
+    font-size:30px;
+    margin-left: 10px;
+}
+.modal-body{
+    display:flex;
+    flex-direction: column;
+}
+.modal-label{
+    margin: 12px 12px;
+}
+.modal-body input{
+    margin: 0 12px;
+    padding:8px;
+    border:1px solid #d4cdcd;
+}
+.modal-buton{
+    margin: 12px 12px;
+    padding: 12px;
+    border: none;
+    background-color:#009688;
+    color:#fff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor:pointer;
+}
+.count-fee{
+    margin: 12px 12px;
+}
+
+/* CSS Responsive */
+@media only screen and (max-width: 450px){
+    #slider .text-content{
+        display: none;
+    }
+}
+
+/* Animation */
+@keyframes modalFadeIn{
+    from{
+        transform:translateY(-120px);
+        opacity: 0.6;
+    }
+    to{
+        transform:translateY(0px);
+        opacity: 1;
+    }
+}
+/* Media Queries */
+/* PC */
+@media (min-width: 1024px) {
+    #header-phone {
+        display: none;
+    }
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width:1024px) {
+    #header-phone {
+        display: none;
+    }
+    #content .description{
+        padding: 0 24px;
+    }
+    .infors-list{
+        margin: 0 24px;
+    }
+    .tickets-list{
+        margin: 0 16px;
+    }
+    .contact-content{
+        margin: 0 16px;
+    }
+}
+/* Phone */
+@media (max-width:740px){
+    #header{
+        display:none;
+    }
+    #slider{
+        margin-top: 0;
+    }
+    #content .content-section{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    #content .members{
+        display:block;
+    }
+    #content .tag{
+        width: 100%;
+        margin-top:20px;
+    }
+    .description-ticket {
+        margin: 12px 8px 12px 0;
+    }
+    .tickets-list{
+        display:block;
+    }
+    .ticket-infor{
+        width: fit-content;
+        margin-bottom: 16px;
+    }
+    .contact-infors{
+        display: block;
+        width: 100%;
+    }
+    .col-2{
+        width: 100%;
+    }
+    
+}
